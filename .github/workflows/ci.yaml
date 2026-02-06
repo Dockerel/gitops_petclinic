@@ -63,7 +63,7 @@ jobs:
     # Docker 이미지 빌드 & 푸시
     - name: Build, tag, and push image to Amazon ECR
       env:
-        ECR_REGISTRY: 605863933397.dkr.ecr.us-west-2.amazonaws.commit
+        ECR_REGISTRY: 605863933397.dkr.ecr.us-west-2.amazonaws.com
         ECR_REPOSITORY: user15-cluster-repo
         IMAGE_TAG: ${{ github.sha }}
       run: |
